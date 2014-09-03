@@ -21,9 +21,9 @@ public class Factorial {
          for ( c = 1 ; c <= n ; c++ )
             fact = fact*c;
  
-         System.out.println("Factorial of "+n+" is = "+fact);
-      }
-
+         System.out.println("Faactorial of "+n+" is = "+fact);
+      }	
+	System.out.println("Changes after My first commit!");
     
     }
 }
