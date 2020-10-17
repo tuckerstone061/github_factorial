@@ -1,29 +1,20 @@
 
 
 //package factorial;
-import java.util.Scanner;
+import java.util.*;
+class Factorial 
+{
+	public static void main(String[] args) 
+	{
+		int f=1;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter a number");
+		int i=sc.nextInt();
+		for(;i>1;i--)
+		{
+			f=f*i;
+		}
+		System.out.println("factorial = "+f);
 
-public class Factorial {
-
-    public static void main(String args[])
-   {
-      int n, c, fact = 1;
- 
-      System.out.println("Enter an integer to calculate it's factorial");
-      Scanner in = new Scanner(System.in);
- 
-      n = in.nextInt();
- 
-      if ( n > 0 )
-         System.out.println("Number should be non-negative.");
-      else
-      {
-         for ( c = 1 ; c <= n ; c++ )
-            fact = fact*c;
- 
-         System.out.println("Faactorial of "+n+" is = "+fact);
-      }	
-	System.out.println("Changes after My first commit!");
-    
-    }
+	}
 }
